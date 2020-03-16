@@ -3,7 +3,7 @@
 #-o origin version
 #-n new version
 
-while getopts o:n:p:b: option
+while getopts o:n: option
 do
 case "${option}"
 in
@@ -21,7 +21,7 @@ sed -i 's/${BOARD}.12200.${ORIGIN}.0.tbz/${BOARD}.12200.${NEW}.0.tbz2/' srcuris
 
 sed -i 's/${BOARD}_signed.12200.${ORIGIN}.0.tbz2/${BOARD}_signed.12200.${NEW}.0.tbz2/' srcuris
 
-cat srcuris | grep ${NEW}
+cat srcuris | grep ${BOARD}
 
 echo "------modify model.yaml------"
 cd ~/trunk/src/private-overlays/overlay-${board}-private/chromeos-base/chromeos-config-bsp-${board}-private/files
@@ -30,7 +30,7 @@ sed -i 's/${BOARD}.12200.${ORIGIN}.0.tbz/${BOARD}.12200.${NEW}.0.tbz2/' model.ya
 
 sed -i 's/${BOARD}_signed.12200.${ORIGIN}.0.tbz2/${BOARD}_signed.12200.${NEW}.0.tbz2/' model.yaml
 
-cat model.yaml | grep ${NEW}
+cat model.yaml | grep ${BOARD}
 
 
 echo "------making new updater------"
