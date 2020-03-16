@@ -3,7 +3,7 @@
 #-o origin version
 #-n new version
 
-while getopts o:n: option
+while getopts o:n:p:b: option
 do
 case "${option}"
 in
