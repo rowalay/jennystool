@@ -14,7 +14,9 @@ ${BOARD NAME} : ex.
 ${OLD VERSION} : ex. 48
 ${NEW VERSION} : ex. 68
 
-###/tmp/extract_updater.sh -i ${ChromeOS image} 
+### /tmp/extract_updater.sh -i ${ChromeOS image} 
 
  (make sure pwd is the same as where ${ChromeOS image} is in)
  
+
+

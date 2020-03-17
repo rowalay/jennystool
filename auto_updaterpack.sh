@@ -39,7 +39,7 @@ ACCEPT_LICENSE="Google-TOS" ~/trunk/src/platform/dev/contrib/cros_update_firmwar
 echo "------unpack updater------"
 sudo rm -rg /tmp/new
 mkdir /tmp/new/
-cd /build/sarien/usr/sbin
+cd /build/${board}/usr/sbin
 ./chromeos-firmwareupdate --unpack /tmp/new
 echo "------updater is in /tmp/new------"
 echo "------coreboot images are in /tmp/new/images------"

@@ -23,7 +23,6 @@ cd /tmp/new
 echo "------unpack updater------"
 ./chromeos-firmwareupdate --unpack /tmp/new/
 
-cd images
 
 echo "------unmount Chromeos image------"
 ~/trunk/src/scripts/mount_gpt_image.sh -u
