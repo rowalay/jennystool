@@ -2,6 +2,11 @@
 
 #DEFAULT_IMAGE="chromeos_image.bin"
 
+######
+#Usage : >./extract_updater.sh -i Chrome-test-image.bin
+
+######
+
 while getopts i: option
 do 
 case "${option}"
